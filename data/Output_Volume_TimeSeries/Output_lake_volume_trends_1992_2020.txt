@@ -1,3 +1,0 @@
-LakeIDandName LWSRate Pvalue MonthlyCoverage Rsquare RMSE LevelError TrendR2 MaximumValue
-ID82Large_aral_sea_East -4.170524 0 0.988   0.973    1.3353e+09    0.0057769  0.77613088 -9999
-ID82Large_aral_sea_West -2.1363889 0 0.824   0.991    7.50642e+07    0.00920644  0.91371638 -9999
