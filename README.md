@@ -1,57 +1,22 @@
-# HSI-Spectral-Indices
-
-# Hyperspectral imaging data
+# HSI-Narrowband-Spectral-Indices
 
 ## Summary
 
-Hyperspectral imaging data is collected using the Headwall VNIR and SWIR sensors. In the Nov 2017 Beta Release only VNIR data is provided because we do not have the measurements of downwelling spectral radiation required by the pipeline.
+Hyperspectral imaging data is collected using AVIRIS-NG sensors. 
 
-Please see the [README hyperspectral pipeline README](https://github.com/terraref/extractors-hyperspectral/tree/v1.0) for more information about how the data are generated and known issues.
-
-## Hyperspectral Algorithm and pipeline
-
-See [**Hyperspectral extractor**](https://github.com/terraref/extractors-hyperspectral)
+Please see the [README hyperspectral README](https://github.com/terraref/extractors-hyperspectral/tree/v1.0) for more information about how the data are generated and known issues.
 
 ## Data Access
+### Level 2 data access
+AVIRIS-NG data is available in the filesystem, accessible via Globus in the following directories:
 
-### Raw Data
-
-Raw data is available in the filesystem, accessible via Globus in the following directories:
-
-* VNIR: `/sites/ua-mac/raw_data/VNIR`
-* SWIR: `/sites/ua-mac/raw_data/SWIR`
+* 
 
 These files are uncalibrated; see the hyperspectral pipeline repository for information on how these can be processed.
 
-### Level 1 data access
-
-Hyperspectral data is available via Clowder, [Globus \#Terraref endpoint](https://www.globus.org/), the [TERRA REF Workbench](https://workbench.terraref.org), and our [THREDDS server](https://terraref.ncsa.illinois.edu/thredds):
-
-* **Clowder**:
-  * [VNIR Hyperspectral NetCDFs](https://terraref.ncsa.illinois.edu/clowder/collection/5a0cc7e64f0ca87e15ba3163)
-  * SWIR Collection: _Level 1 data not available_
-* **Globus and Workbench**:
-  * VNIR: `/sites/ua-mac/Level_1/vnir_netcdf`
-  * SWIR: _Level 1 data not available_
-* **Sensor information**:
-  * [Headwall SWIR](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a79e4f0cad7d81319f5f) 
-  * [Headwall VNIR](https://terraref.ncsa.illinois.edu/clowder/datasets/5873a7bb4f0cad7d8131a0b7) 
-
-For details about using this data via Clowder or Globus, please see [Data Access](https://github.com/terraref/documentation/tree/56f669dc870b3c3921bfc029914545574e70f8df/how-to-access-data.md) section.
-
-### Level 2 data access
-
-Level 2 data are spectral indices computed at the same resolution as Level 1. These can be found in the same Level 1 directories as their parents, but the files are appended \*\_ind.nc.
-
+### Hyperspectral Indices
 To get a list of hyperspectral indices currently generated [https://terraref.ncsa.illinois.edu/bety/api/v1/variables?type=Reflectance%20Index](https://terraref.ncsa.illinois.edu/bety/api/v1/variables?type=Reflectance%20Index)
 
-```text
-traits::
-```
-
-### Level 3 data access
-
-### Hyperspectral Indices
 
 The following indices are computed and provided as both Level 2 data at full spatial resolution and as Level 3 \(plot level\) means.
 
@@ -156,5 +121,3 @@ Citations can be found Morris, Geoffrey P., Davina H. Rhodes, Zachary Brenton, P
 ### See also
 
 * [Sensor calibration](../../protocols/sensor-calibration.md)
-* [Hyperspectral data pipeline](../../protocols/hyperspectral-data.md)
-* [Geospatial information](geospatial-information.md)
