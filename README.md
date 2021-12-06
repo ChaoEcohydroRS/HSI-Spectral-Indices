@@ -20,7 +20,7 @@ To get a list of hyperspectral indices currently generated [https://terraref.ncs
 
 The following indices are computed and provided as both Level 2 data at full spatial resolution and as Level 3 \(plot level\) means.
 
-Citations can be found Morris, Geoffrey P., Davina H. Rhodes, Zachary Brenton, Punna Ramu, Vinayan Madhumal Thayil, Santosh Deshpande, C. Thomas Hash et al. "Dissecting genome-wide association signals for loss-of-function phenotypes in sorghum flavonoid pigmentation traits." G3: Genes, Genomes, Genetics 3, no. 11 \(2013\): 2085-2094.
+Citations can be found 
 
 | Index | Label | Formula | Citation |
 | :--- | :--- | :--- | :--- |
